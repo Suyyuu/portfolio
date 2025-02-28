@@ -1,0 +1,63 @@
+.gridContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Example to center it vertically and horizontally */
+    background: url(/grid.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .design {
+    margin-top: 5%;
+    padding: 0px 10px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .card {
+    /* background: rgba(255, 255, 255, 0.1); */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .fullSizeSvg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .device {
+    transition: transform 0.5s ease;
+    pointer-events: all;
+  }
+  
+  svg:hover .tablet {
+    transform: translateX(40px);
+    z-index: 2;
+  }
+  
+  svg:hover .desktop {
+    transform: translateX(-30px);
+    z-index: 1;
+  }
+  
+  svg:hover .phone {
+    transform: translateY(-30px);
+    z-index: 3;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .gridContainer {
+      height: 200px;
+    }
+    .design {
+      margin-top: 17%;
+      padding: 0;
+    }
+  }
