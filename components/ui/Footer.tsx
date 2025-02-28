@@ -4,7 +4,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa'; // Importing s
 
 const Footer = () => {
   const email = 'suyashkharade1234@gmail.com';
-  const subject = 'Let\'s Work Together!';
+  const subject = "Let's Work Together!";
 
   const handleMailto = () => {
     const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
