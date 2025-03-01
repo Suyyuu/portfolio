@@ -44,7 +44,7 @@ const About = () => {
 
           <p>
             I am always looking forward towards learning new technologies.. that being said, I truly believe 
-            that, you don't have to master every technology, if you have resources, make use of them and get 
+            that, you don&apos;t have to master every technology, if you have resources, make use of them and get 
             the job done.
           </p>
 
