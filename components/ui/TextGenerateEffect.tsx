@@ -24,7 +24,7 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
-  }, [words]);  // Trigger effect on `words` change
+  }, [words, animate]);  // Include `animate` in the dependency array
 
   const renderWords = () => {
     return (
