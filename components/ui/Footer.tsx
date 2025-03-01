@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="w-full sectionGradient5 h-80 text-white py-12 relative" id='contact'>
       <div className="flex flex-col items-center justify-center space-y-4">
-        <p className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight sectionHeader">Let's work together?</p>
+        <p className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight sectionHeader">Let&apos;s work together?</p>
         <button
           onClick={handleMailto}
           className="bg-purple-900 text-white py-2 px-6 rounded-md text-lg transition-all hover:bg-violet-600 focus:outline-none"
