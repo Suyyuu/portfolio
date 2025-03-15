@@ -7,7 +7,6 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
-import RainAnimation from "./RainAnimation";
 import ResponsiveSVG from "./ResponsiveSVG";
 import DesignComponent from "./DesignComponent";
 import Cogs from "./Cogs";
