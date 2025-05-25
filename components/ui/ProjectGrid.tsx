@@ -165,12 +165,12 @@ const ProjectGrid: React.FC = () => {
 
   
   const projects: Project[] = [
-    { title: "Zen1. AI SaaS", description: "A Sleek, Interactive, Clean and Modern AI Saas Website...", techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"], summary: "Zen1.AI is a cutting-edge, frontend-focused SaaS platform crafted to enhance the productivity and collaboration of development teams. This all-in-one solution integrates project management, team communication, document sharing, issue tracking, and more—entirely powered by an intuitive, visually engaging, and highly interactive frontend interface." , year: "2025", imageSrc: "/p1.png", highlights: [
-      { text: "Responsive design", image: "/p1f1.png" },
-      { text: "Interactive elements", image: "/p1f2.png" },
+    { title: "Zen1. AI SaaS", description: "A Sleek, Interactive, Clean and Modern AI Saas Website...", techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"], summary: "Zen1.AI is a cutting-edge, frontend-focused SaaS platform crafted to enhance the productivity and collaboration of development teams. This all-in-one solution that integrates project management, team communication, document sharing, issue tracking, and more; entirely powered by an intuitive, visually engaging, and highly interactive frontend interface." , year: "2025", imageSrc: "/p1.png", highlights: [
+      { text: "Responsive Design", image: "/p1f1.png" },
+      { text: "Interactive Elements", image: "/p1f2.png" },
       { text: "Flyout Menu", image: "/p1f3.png" }
     ],  videoSrc: "/iPhone.png", url: "https://zenith-ai-saas.vercel.app/" },
-    { title: "The Electrifying Coach", description: "Creating a polished, academic website...",techStack: [], summary:"", year: "2023", imageSrc: "/path/to/image2.jpg", highlights: [
+    { title: "Aurelia- Crypto Swapping Platform", description: "Creating a polished, crypto website...",techStack: ["Next.js", "Node.js", "Express.js", "Tailwind CSS", "Framer Motion"], summary:"", year: "2025", imageSrc: "/path/to/image2.jpg", highlights: [
       { text: "Responsive design", image: "/responsive-design.png" },
       { text: "Interactive elements", image: "/interactive-elements.png" },
       { text: "Flyout Menu", image: "/flyout-menu.png" }
