@@ -1,6 +1,6 @@
 "use client"
 
-import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa'; // Importing social media icons from react-icons
+import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   const email = 'suyashkharade1234@gmail.com';

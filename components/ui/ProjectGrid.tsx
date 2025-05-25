@@ -5,12 +5,10 @@ import Mockup from './Mockup';
 import Link from 'next/link';
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-
 interface Highlight {
   text: string;
   image?: string;
 }
-
 
 interface Project {
   title: string;
@@ -24,11 +22,9 @@ interface Project {
   url: string;
 }
 
-
 const ProjectCard: React.FC<{ project: Project; onClick: () => void }> = ({ project, onClick }) => {
   const imageRef = useRef<HTMLImageElement>(null);
   const [transformStyle, setTransformStyle] = useState<string>('rotateX(0deg) rotateY(0deg)');
-
   
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!imageRef.current) return;
@@ -40,15 +36,12 @@ const ProjectCard: React.FC<{ project: Project; onClick: () => void }> = ({ proj
 
     const centerX = width / 2;
     const centerY = height / 2;
-
-    
+ 
     const rotateX = (mouseY - centerY) / 10;  
     const rotateY = (mouseX - centerX) / 10;  
 
-    
     setTransformStyle(`rotateX(${rotateX}deg) rotateY(${rotateY}deg)`);
   };
-
   
   const handleMouseLeave = () => {
     setTransformStyle('rotateX(0deg) rotateY(0deg)');
