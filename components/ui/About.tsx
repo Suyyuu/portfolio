@@ -33,7 +33,7 @@ const About = () => {
 
           <p>
             Looked at this website?? this is what I do. I make creative ideas
-            happen. meaning I create things that not only work, but resonates.
+            happen. I create things that not only work, but resonates.
           </p>
 
           <p>
