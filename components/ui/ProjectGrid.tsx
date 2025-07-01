@@ -55,13 +55,13 @@ const ProjectCard: React.FC<{ project: Project; onClick: () => void }> = ({ proj
       onClick={onClick}  
     >
       
-      <div className="sm:py-8 sm:px-12 py-2 px-2 border border-[#6c3f8e90] rounded-lg">
+      <div className="border p-2 border-[#6c3f8e90] rounded-lg">
         
         <img 
           ref={imageRef}
           src={project.imageSrc} 
           alt={project.title} 
-          className="w-full sm:h-96 object-cover rounded-lg"
+          className="w-full sm:h-96 object-cover rounded-lg sm:py-4 sm:px-4 py-2 px-2"
           style={{ transform: transformStyle, transition: 'transform 0.1s ease-out' }}
         />
       </div>
@@ -158,12 +158,12 @@ const ProjectGrid: React.FC = () => {
 
   
   const projects: Project[] = [
-    { title: "Zen1. AI SaaS", description: "A Sleek, Interactive, Clean and Modern AI Saas Website...", techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"], summary: "Zen1.AI is a cutting-edge, frontend-focused SaaS platform crafted to enhance the productivity and collaboration of development teams. This all-in-one solution that integrates project management, team communication, document sharing, issue tracking, and more; entirely powered by an intuitive, visually engaging, and highly interactive frontend interface." , year: "2025", imageSrc: "/p1.png", highlights: [
+    { title: "Zenith AI SaaS", description: "A Sleek, Interactive, Clean and Modern AI Saas Website...", techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"], summary: "Zenith is a cutting-edge, frontend-focused SaaS platform crafted to enhance the productivity and collaboration of development teams. This all-in-one solution that integrates project management, team communication, document sharing, issue tracking, and more; entirely powered by an intuitive, visually engaging, and highly interactive frontend interface." , year: "2025", imageSrc: "/p1.png", highlights: [
       { text: "Responsive Design", image: "/p1f1.png" },
       { text: "Interactive Elements", image: "/p1f2.png" },
       { text: "Flyout Menu", image: "/p1f3.png" }
     ],  videoSrc: "/iPhone.png", url: "https://zenith-ai-saas.vercel.app/" },
-    { title: "Aurelia- Crypto Swapping Platform", description: "Creating a polished, crypto website...",techStack: ["Next.js", "Node.js", "Express.js", "Tailwind CSS", "Framer Motion"], summary:"", year: "2025", imageSrc: "/path/to/image2.jpg", highlights: [
+    { title: "Aurelia- Crypto Swapping Platform", description: "Developed a polished, crypto website...",techStack: ["Next.js", "Node.js", "Express.js", "Tailwind CSS", "Framer Motion"], summary:"", year: "2025", imageSrc: "/p2.png", highlights: [
       { text: "Responsive design", image: "/responsive-design.png" },
       { text: "Interactive elements", image: "/interactive-elements.png" },
       { text: "Flyout Menu", image: "/flyout-menu.png" }

@@ -10,23 +10,23 @@ export const workExperience = [
   {
     id: 1,
     title: "Frontend Engineer Intern - Oasis Infobyte",
-    desc: "development of a web-based applications using React.js, ShadCN UI and Tailwind CSS.",
+    desc: "development of a web-based applications using React.js, Shadcn UI and Tailwind CSS.",
     className: "md:col-span-2",
-    thumbnail: "/hacker.png",
+    thumbnail: "/oasisLogo.jpeg",
   },
   {
     id: 2,
     title: "Web Developer Intern - Digital Bhem",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    desc: "Designed and developed full-stack app for all platforms and devices using React.",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
+    thumbnail: "/digitalLogo.jpeg",
   },
   {
     id: 3,
     title: "Freelance Frontend Developer",
     desc: "Developing Web Applications for a clients, from initial concept to deployment",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
+    thumbnail: "/freelancer.svg",
   }
 ];
 
