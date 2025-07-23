@@ -44,10 +44,10 @@ export function Button({
         className="absolute inset-0"
         style={{ borderRadius: "10px" }}
       >
-        <MovingBorder duration={duration} rx="30%" ry="30%">
+        <MovingBorder duration={duration} rx="50%" ry="30%">
           <div
             className={cn(
-              "h-20 w-20 opacity-[0.8] bg-[#6c3f8e90]",
+              "h-20 w-20 opacity-[0.8] bg-[#9747d4]",
               borderClassName
             )}
           />
@@ -56,7 +56,7 @@ export function Button({
 
       <div
         className={cn(
-          "relative bg-[#000303] border border-[#6c3f8e90] backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          "relative bg-[#000303] border border-[#9747d490] backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
           className
         )}
         style={{
@@ -71,7 +71,7 @@ export function Button({
 
 export const MovingBorder = ({
   children,
-  duration = 2000,
+  duration = 5000,
   rx,
   ry,
   ...otherProps

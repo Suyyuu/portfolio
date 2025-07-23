@@ -1,9 +1,9 @@
 "use client"
 
 import React, { useState, useRef, useEffect } from 'react';
-import Mockup from './Mockup';
 import Link from 'next/link';
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 interface Highlight {
   text: string;
@@ -76,7 +76,7 @@ const ProjectCard: React.FC<{ project: Project; onClick: () => void }> = ({ proj
         >
           Know More?
         </button>
-        <h3 className="text-white text-xl font-semibold">{project.title}</h3>
+        <h3 className="text-white text-xl font-semibold w-[180px] lg:w-full">{project.title}</h3>
         <p className="mt-2 text-gray-300 text-sm lg:w-full w-[180px]">{project.description}</p>
       </div>
     </div>
@@ -109,7 +109,11 @@ const Modal: React.FC<{ project: Project; onClose: () => void }> = ({ project, o
         <img src={project.imageSrc} alt={project.title} className="w-full h-96 object-cover rounded-lg mb-4" />
         <h2 className="text-2xl font-bold mb-2 text-white">{project.title}</h2>
         <p className="text-sm text-white mb-4">{project.description}</p>
-        <Link href={project.url} target='blank' className='flex items-center gap-3 text-[16px] pb-5 underline underline-offset-4'>Visit Live Site<FaExternalLinkAlt className='text-[18px]' /></Link>
+
+        <div className='md:w-[60%] w-full flex justify-around items-center mb-5'>
+          <Link href={project.url} target='blank' className='flex items-center gap-3 text-[16px] knowMore p-2 rounded-lg'>Source Code<FaGithub className='text-[18px]' /></Link>
+          <Link href={project.url} target='blank' className='flex items-center gap-3 text-[16px] knowMore p-2 rounded-lg'>Live Project<HiOutlineExternalLink className='text-[18px]' /></Link>
+        </div>
 
         <h3 className="font-semibold mb-2 bg-[#00000060] text-white w-fit px-5 py-2"> Tech Stack</h3>
 
@@ -175,7 +179,7 @@ const ProjectGrid: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 md:py-8 py-2">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
           <div key={index} className={`transform ${index % 2 === 0 ? 'translate-y-4' : '-translate-y-4'}`}>

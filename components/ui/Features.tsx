@@ -2,11 +2,6 @@
 
 import React from "react";
 import { cn } from "@/utils/cn";
-import Image from "next/image";
-import { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
-import { IconBrandYoutubeFilled } from "@tabler/icons-react";
-import Link from "next/link";
 import DesignComponent from "./DesignComponent";
 import Cogs from "./Cogs";
 import IntegrationCard from "./IntegrationCard";

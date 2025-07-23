@@ -6,7 +6,6 @@ import About from "@/components/ui/About";
 import { FeaturesSectionDemo } from "@/components/ui/Features";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Footer from "@/components/ui/Footer";
-import ProjectGrid from "@/components/ui/ProjectGrid";
 import { navItems } from "@/data";
 
 
