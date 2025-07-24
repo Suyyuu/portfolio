@@ -37,8 +37,6 @@ export function SparklesPreview() {
                 Hi, I&apos;m Suyash, a Full Stack Developer based in India
             </p>
 
-            {/* <h1 className="uppercase tracking-widest text-center text-[230px] md:text-18xl lg:text-25xl font-extrabold heroBanner">LEO</h1> */}
-
             <HeroContent />
 
             <a href="#projects">

@@ -40,10 +40,7 @@ export function Button({
       }}
       {...otherProps}
     >
-      <div
-        className="absolute inset-0"
-        style={{ borderRadius: "10px" }}
-      >
+      <div className="absolute inset-0" style={{ borderRadius: "10px" }}>
         <MovingBorder duration={duration} rx="50%" ry="30%">
           <div
             className={cn(

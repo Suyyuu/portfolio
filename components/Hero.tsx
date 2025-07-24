@@ -1,8 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa";
-import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import HeroContent from "./sub/HeroContent";
 import { SparklesPreview } from "./Herosparkles";
 
 const Hero = () => {
@@ -25,10 +21,8 @@ const Hero = () => {
           fill="#a2acf0"
         />
       </div>
-
-            <SparklesPreview />
+      <SparklesPreview />
     </div>
-    
   );
 };
 

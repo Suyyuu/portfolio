@@ -41,7 +41,6 @@ const HexagonalGrid: React.FC = () => {
         </div>
         <div className={styles.hex}></div>
 
-        {/* Column 4: Google, Empty */}
         <div className={styles.hex}>
           <img
             src="/docker.svg"

@@ -118,11 +118,6 @@
   cursor: pointer;
 }
 
-.heroBanner {
-  -webkit-text-stroke: 1.2px rgb(80, 14, 113);
-  color: transparent;
-}
-
 .icons {
   color: #fff !important;
 }
@@ -253,7 +248,7 @@
   padding: 0.7rem 1.8rem;
 }
 
-.growthText { 
+.growthText {
   padding: 20px;
   z-index: 900;
 }
@@ -432,7 +427,6 @@
   top: 5%;
 }
 
-
 @keyframes floating {
   0% {
     transform: translateY(0);
@@ -467,7 +461,7 @@
   font-size: 24px;
   margin-top: 20px;
   opacity: 1;
-  transition: .7s ease-in;
+  transition: 0.7s ease-in;
 }
 
 .lockHeader1 {
@@ -475,7 +469,7 @@
   z-index: 900;
   font-size: 24px;
   margin-top: 20px;
-  transition: .7s ease-in;
+  transition: 0.7s ease-in;
   opacity: 0;
 }
 
@@ -484,7 +478,7 @@
   height: 50%;
   width: 50%;
   top: 40%;
-  transition: .7s ease-in;
+  transition: 0.7s ease-in;
 }
 
 .lockCard:hover .lockHeader {
@@ -497,7 +491,7 @@
   opacity: 1;
 }
 
-.lockCard:hover .lock{
+.lockCard:hover .lock {
   transform: translateY(-50%);
 }
 
@@ -528,5 +522,5 @@
 }
 
 .modalBg {
-  background: linear-gradient(to bottom, #4d1977 10%, #150427 60% ,#000000);
+  background: linear-gradient(to bottom, #4d1977 10%, #150427 60%, #000000);
 }

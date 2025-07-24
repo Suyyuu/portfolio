@@ -1,73 +1,71 @@
-/* components/IntegrationCard.module.css */
-
 .card {
-    position: relative;
-    width: 100%;
-    padding: 20px;
-    height: 100%;
-    /* top: -4%; */
-    background: url(/lights1.png);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-  }
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  /* top: -4%; */
+  background: url(/lights1.png);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
 
-  .card h2 {
-    color: #ffffff;
-    font-size: 24px;
-    z-index: 1;
-    position: relative;
-  }
-  
-  .card p {
-    color: #d4d4d4;
-    margin-bottom: 40px;
-    font-size: 14px;
-  }
+.card h2 {
+  color: #ffffff;
+  font-size: 24px;
+  z-index: 1;
+  position: relative;
+}
 
-  .integrations {
-    position: relative;
-    margin-top: 20px;
-  }
-  
-  /* Zigzag placement of items */
-  .integrationItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 10px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    border: 1px solid #bdbdbd20;
-    border-radius: 25px;
-    color: #ffffffdb;
-    font-weight: 600;
-    font-size: 16px;
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 2;
-    width: 130px;
-    cursor: pointer;
-  }
-  
-  .integrationItem:nth-child(odd) {
-    margin-left: 30px;
-  }
-  
-  .integrationItem:nth-child(even) {
-    margin-left: auto;
-    margin-right: 30px;
-  }
-  
-  /* For the last item */
-  .integrationItem:last-child {
-    margin-bottom: 0;
-  }
-  
-  /* Optional: Add logos */
-  .integrationItem img {
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
-  }
-  
+.card p {
+  color: #d4d4d4;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.integrations {
+  position: relative;
+  margin-top: 20px;
+}
+
+.integrationItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid #bdbdbd20;
+  border-radius: 25px;
+  color: #ffffffdb;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+  width: 130px;
+  cursor: pointer;
+}
+
+.integrationItem:nth-child(odd) {
+  margin-left: 30px;
+}
+
+.integrationItem:nth-child(even) {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.integrationItem:last-child {
+  margin-bottom: 0;
+}
+
+.integrationItem img {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}

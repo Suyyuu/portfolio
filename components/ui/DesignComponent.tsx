@@ -5,7 +5,7 @@ const DesignComponent: React.FC = () => {
     <div className={styles.gridContainer}>
       <div className={`${styles.card} ${styles.design}`}>
         <svg
-          className={styles.fullSizeSvg} // Apply full-size styling
+          className={styles.fullSizeSvg}
           viewBox="85.72934075342465 157.728 395.6328767123287 142.56"
           xmlns="http://www.w3.org/2000/svg"
         >

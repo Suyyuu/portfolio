@@ -1,15 +1,13 @@
-// components/IntegrationCard.tsx
-import React from 'react';
-import styles from './IntegrationCard.module.css';
+import React from "react";
+import styles from "./IntegrationCard.module.css";
 
 const IntegrationCard: React.FC = () => {
   return (
     <div className={styles.card}>
-        <h2>Backend Alchemy.</h2>
-        <p>Bridging the Gaps, Crafting Seamless Integrations.</p>
+      <h2>Backend Alchemy.</h2>
+      <p>Bridging the Gaps, Crafting Seamless Integrations.</p>
       <div className={styles.integrations}>
         <div className={styles.line}></div>
-        {/* Integration Items in Zigzag Pattern */}
         <div className={styles.integrationItem}>
           <img src="/socket-io.svg" alt="SocketIO" /> SocketIO
         </div>
