@@ -19,7 +19,7 @@ const DesignComponent: React.FC = () => {
           <rect width="600" height="300" fill="transparent" />
 
           <g className={`${styles.device} ${styles.desktop}`}>
-            <image x="280" y="175" width="200" height="150" href="/desktop1.png" />
+            <image x="280" y="175" width="200" height="180" href="/desktop1.png" />
           </g>
 
           <g className={`${styles.device} ${styles.tablet}`}>

@@ -25,7 +25,7 @@ const HeroContent = () => {
         >
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-[#D8BFD8] to-transparent h-[2px]" />
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5 " />
-          <h1 className="Welcome-text text-[13px]">The Spellcaster</h1>
+          <h1 className="Welcome-text text-[13px]">Frontend Development</h1>
         </motion.div>
 
         <motion.div
@@ -34,7 +34,7 @@ const HeroContent = () => {
         >
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-[#D8BFD8] to-transparent h-[2px]" />
           <FaFeatherAlt className="text-[#b49bff] mr-[10px] h-5 w-5 " />
-          <h1 className="Welcome-text text-[13px]">The Wordsmith</h1>
+          <h1 className="Welcome-text text-[13px]">Backend Integration</h1>
         </motion.div>
 
         <motion.div
@@ -43,7 +43,7 @@ const HeroContent = () => {
         >
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-[#D8BFD8] to-transparent h-[2px]" />
           <FaWandMagicSparkles className="text-[#b49bff] mr-[10px] h-5 w-5 " />
-          <h1 className="Welcome-text text-[13px]">The Alchemist</h1>
+          <h1 className="Welcome-text text-[13px]">Platform Engineering</h1>
         </motion.div>
       </div>
     </motion.div>

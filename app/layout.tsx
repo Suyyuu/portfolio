@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import StarsCanvas from "@/components/main/StarBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Suyash's Portfolio",
-  description: "Godlike portfolio with subtle animations and some magic",
+  title: "Suyash Portfolio",
+  description: "My portfolio with subtle animations and some magic",
 };
 
 export default function RootLayout({
@@ -26,7 +25,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <StarsCanvas /> */}
           {children}
         </ThemeProvider>
       </body>

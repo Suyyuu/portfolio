@@ -24,9 +24,9 @@ export function SparklesPreview() {
       <div className="max-w-[89vw] md:max-w-2xl
         lg:max-w-[60vw] flex flex-col items-center justify-center">
 
-            <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-                Transforming Fantasies Into Reality
-            </h2>
+            {/* <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+                Nothing fancy here
+            </h2> */}
 
             <TextGenerateEffect 
             className="text-center text-[40px] md:text-5xl lg:text-6xl" 
@@ -34,7 +34,7 @@ export function SparklesPreview() {
             />
 
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                Hi, I&apos;m Suyash, a Full Stack Developer based in India
+                Hi, I&apos;m Suyash, a Software Developer based in India
             </p>
 
             <HeroContent />

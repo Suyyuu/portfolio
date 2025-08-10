@@ -6,7 +6,6 @@ import DesignComponent from "./DesignComponent";
 import Cogs from "./Cogs";
 import IntegrationCard from "./IntegrationCard";
 import Thunder from "./Thunder";
-import FloatingBubbles from "./FloatingBubbles";
 
 export function FeaturesSectionDemo() {
   const features = [
@@ -78,9 +77,9 @@ export function FeaturesSectionDemo() {
           Creativity that Resonates
         </h4>
 
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300 text-pretty">
           Whether it’s crafting interactive web applications, deploying cloud
-          infrastructures, or integrating cutting-edge frameworks, i have you covered!
+          infrastructures, or integrating cutting-edge frameworks, i gotcha mate
         </p>
       </div>
 
@@ -144,14 +143,14 @@ export const SkeletonOne = () => {
   return (
     <div className="relative flex gap-10 h-full growthBg">
       <div className="growthText">
-        <h1>Pact of Impact.</h1>
-        <h4>Promise that drive results</h4>
+        <h1>Frontend Engineering.</h1>
+        <h4>UI is only as good as it converts</h4>
       </div>
-      <img className="growthDollar1 dollar" src="/dollar1.png" alt="" />
-      <img className="growthDollar2 dollar" src="/dollar2.png" alt="" />
-      <img className="growthDollar3 dollar" src="/dollar3.png" alt="" />
-      <img className="growthDollar4 dollar" src="/dollar4.png" alt="" />
-      <img className="growthDollar5 dollar" src="/dollar5.png" alt="" />
+      <img className="growthDollar1 dollar" src="/dollar1.png" alt="dollar" />
+      <img className="growthDollar2 dollar" src="/dollar2.png" alt="dollar" />
+      <img className="growthDollar3 dollar" src="/dollar3.png" alt="dollar" />
+      <img className="growthDollar4 dollar" src="/dollar4.png" alt="dollar" />
+      <img className="growthDollar5 dollar" src="/dollar5.png" alt="dollar" />
     </div>
   );
 };
@@ -162,7 +161,7 @@ export const SkeletonThree = () => {
       <h1 className="lockHeader">Enchanted. Secure.</h1>
       <h1 className="lockHeader1">E**hanted. Secu**.</h1>
       <div className="lockBg"></div>
-      <img className="lock" src="/lock.png" alt="" />
+      <img className="lock" src="/lock.png" alt="lockIcon" />
     </div>
   );
 };
@@ -171,8 +170,8 @@ export const SkeletonTwo = () => {
   return (
     <div className="relative h-full overflow-hidden ">
       <div className="growthText">
-        <h1>CMS Powered.</h1>
-        <h4>Tailored to match requirements.</h4>
+        <h1>Actually working</h1>
+        <h4>Idk how, but it does work.</h4>
       </div>
       <Cogs />
     </div>
@@ -181,7 +180,7 @@ export const SkeletonTwo = () => {
 
 export const SkeletonFour = () => {
   return (
-    <div className="h-full md:h-full flex flex-col  relative]">
+    <div className="h-full md:h-full flex flex-col relative]">
       <div className="growthText">
         <h1>Fluid. Adapt. Responsive.</h1>
         <h4>Designs that flow through all screens</h4>
@@ -209,10 +208,15 @@ export const SkeletonSix = () => {
 
 export const SkeletonSeven = () => {
   return (
-    <div className="h-full md:h-full flex flex-col items-center relative ">
-      <h1 className="scaleHeader">Scale Rapidly.</h1>
-      <div className="scaleBg"></div>
-      <img className="scaleImg" src="/scale.png" alt="scalable" />
+    <div className="h-full md:h-full flex flex-col items-center relative scaleBg ">
+      <div className="w-full h-full flex flex-col justify-between p-5">
+        <h1 className="text-[24px]">Iterate, Refine, Repeat</h1>
+        <h4 className="text-[14px]">Deploy, get feedback, Iterate, Deploy Again. <br />
+        [This is actually an empty block.. Oh wait i can quote something here]
+        </h4>
+        <h4 className="text-[18px] text-pretty">"Real Engineering is driving progress by iteratively refining solutions"</h4>
+        <h5 className="text-end">- by Me</h5>
+      </div>
     </div>
   );
 };
@@ -230,9 +234,9 @@ export const SkeletonEight = () => {
 export const SkeletonNine = () => {
   return (
     <div className="h-full md:h-full flex flex-col relative ">
-      <div className="growthText">
-        <h1>Smart Networking.</h1>
-        <h4>Connect. Foster. Grow.</h4>
+      <div className="w-full h-fit flex flex-col justify-between px-5 pt-5">
+        <h1 className="text-[24px]">Smart Networking.</h1>
+        <h4 className="text-[14px]">I'm into tech, science and space</h4>
       </div>
       <a 
           href="https://x.com/Suyash170502" 
@@ -248,13 +252,12 @@ export const SkeletonNine = () => {
 
 export const SkeletonTen = () => {
   return (
-    <div className="h-full md:h-full flex flex-col relative ">
+    <div className="h-full md:h-full flex flex-col relative scaleBg">
       <div className="growthText">
         <h1>Always Learning.</h1>
-        <h4>Never stop learning new technologies.</h4>
+        <h4>You gotta do what you gotta do right?</h4>
       </div>
-      <div className="scaleBg"></div>
-      <FloatingBubbles />
+      <div className="journeyBG"></div>
     </div>
   );
 };

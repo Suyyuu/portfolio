@@ -16,7 +16,7 @@ const Hero = () => {
           fill="#2da6cd"
         />
         <Spotlight
-          className="-top-8 -right-80 h-[screen] 
+          className="-top-8 -right-10 h-[screen] 
             w-[50vw]"
           fill="#a2acf0"
         />

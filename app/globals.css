@@ -368,7 +368,7 @@
   width: 100%;
   height: 100%;
   scale: 0.6;
-  transition: 1s ease;
+  transition: 0.4s ease;
 }
 
 .seoHeader {
@@ -386,14 +386,14 @@
   left: 5%;
   top: 5%;
   backdrop-filter: blur(7px);
-  transition: 1s ease;
+  transition: 0.4s ease;
 }
 
 .seoMagnifier:hover {
   transform: rotateZ(20deg);
   scale: 1.2;
   backdrop-filter: none;
-  transition: 0.5s ease-in;
+  transition: 0.4s ease-in;
 }
 
 .scaleHeader {
@@ -419,31 +419,12 @@
   height: 100%;
 }
 
-.scaleImg {
-  position: absolute;
-  height: 95%;
+.journeyBG {
+  background: url(/journey.svg) no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
-  left: 0;
-  top: 5%;
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  70% {
-    transform: translateY(30px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.animate-floating {
-  animation: floating 3s ease-in-out infinite;
+  height: 100%;
 }
 
 .lockBg {
@@ -461,7 +442,7 @@
   font-size: 24px;
   margin-top: 20px;
   opacity: 1;
-  transition: 0.7s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .lockHeader1 {
@@ -469,7 +450,7 @@
   z-index: 900;
   font-size: 24px;
   margin-top: 20px;
-  transition: 0.7s ease-in;
+  transition: 0.3s ease-in;
   opacity: 0;
 }
 
@@ -478,7 +459,7 @@
   height: 50%;
   width: 50%;
   top: 40%;
-  transition: 0.7s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .lockCard:hover .lockHeader {
@@ -524,3 +505,4 @@
 .modalBg {
   background: linear-gradient(to bottom, #4d1977 10%, #150427 60%, #000000);
 }
+

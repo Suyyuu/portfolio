@@ -4,8 +4,8 @@ import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
-    <div className="md:py-20 py-5" id="experience">
-      <h1 className="heading">
+    <div className="md:py-20 py-5 sectionGradient" id="experience">
+      <h1 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight sectionHeader">
         My
         <span className="text-purple"> Work Experience</span>
       </h1>
@@ -16,7 +16,7 @@ const Experience = () => {
             key={card.id}
             duration={Math.floor(Math.random() * 1000) + 3000}
             borderRadius="10px"
-            className="flex-1 text-white dark:border-[#6c3f8e90]"
+            className="flex-1 text-white dark:border-[#6c3f8e90] bg-[rgba(244,244,244,0.01)]"
             >
               <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 ">
                 <img src={card.thumbnail} alt={card.thumbnail} className="md:w-[100px] md:h-[100px] w-[60px] h-[60px] bg-[#fff]" />
