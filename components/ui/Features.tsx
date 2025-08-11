@@ -78,7 +78,7 @@ export function FeaturesSectionDemo() {
         </h4>
 
         <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300 text-pretty">
-          Whether it’s crafting interactive web applications, deploying cloud
+          Whether it&apos;s crafting interactive web applications, deploying cloud
           infrastructures, or integrating cutting-edge frameworks, i gotcha mate
         </p>
       </div>
@@ -214,7 +214,7 @@ export const SkeletonSeven = () => {
         <h4 className="text-[14px]">Deploy, get feedback, Iterate, Deploy Again. <br />
         [This is actually an empty block.. Oh wait i can quote something here]
         </h4>
-        <h4 className="text-[18px] text-pretty">"Real Engineering is driving progress by iteratively refining solutions"</h4>
+        <h4 className="text-[18px] text-pretty">&quot; Real Engineering is driving progress by iteratively refining solutions &quot;</h4>
         <h5 className="text-end">- by Me</h5>
       </div>
     </div>
@@ -236,7 +236,7 @@ export const SkeletonNine = () => {
     <div className="h-full md:h-full flex flex-col relative ">
       <div className="w-full h-fit flex flex-col justify-between px-5 pt-5">
         <h1 className="text-[24px]">Smart Networking.</h1>
-        <h4 className="text-[14px]">I'm into tech, science and space</h4>
+        <h4 className="text-[14px]">I&apos;m into tech, science and space</h4>
       </div>
       <a 
           href="https://x.com/Suyash170502" 
