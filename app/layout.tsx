@@ -6,8 +6,21 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Suyash Portfolio",
-  description: "My portfolio with subtle animations and some magic",
+  title: "Suyash Kharade | Software Engineer / Product & Growth",
+  description:
+    "Portfolio of Suyash Kharade, Software Development Engineer building production web, backend, and mobile systems across React, Gatsby, Next.js, Python/Django, and Flutter.",
+  keywords: [
+    "Suyash Kharade",
+    "Software Engineer",
+    "Full-Stack Engineer",
+    "Meragi Events",
+    "Product Engineering",
+    "Django",
+    "React",
+    "Next.js",
+    "Flutter",
+    "Bangalore",
+  ],
 };
 
 export default function RootLayout({

@@ -6,6 +6,7 @@ import DesignComponent from "./DesignComponent";
 import Cogs from "./Cogs";
 import IntegrationCard from "./IntegrationCard";
 import Thunder from "./Thunder";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export function FeaturesSectionDemo() {
   const features = [
@@ -72,24 +73,26 @@ export function FeaturesSectionDemo() {
   ];
   return (
     <div className="relative z-20 py-10 lg:py-16 max-w-[70rem] mx-auto sectionGradient2" id="features">
-      <div className="px-8">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight sectionHeader">
-          Creativity that Resonates
+      <div className="px-8 text-center">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#ba9cff40] bg-[#1a0a38]/60 text-xs font-semibold uppercase tracking-widest text-[#ba9cff] mb-3">
+          Architecture
+        </div>
+        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto tracking-tight sectionHeader font-extrabold">
+          Engineering Craft & Architecture
         </h4>
 
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300 text-pretty">
-          Whether it&apos;s crafting interactive web applications, deploying cloud
-          infrastructures, or integrating cutting-edge frameworks, i gotcha mate
+        <p className="text-sm lg:text-base max-w-2xl my-3 mx-auto text-neutral-400 font-normal">
+          From high-throughput server-side pipelines to distributed databases, cross-platform apps, and automated SEO engines
         </p>
       </div>
 
       <div className="relative">
         <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-4 mt-12 gap-3">
-          {features.map((feature) => (
-            <FeatureCard key={feature.title} className={feature.className}>
+          {features.map((feature, idx) => (
+            <FeatureCard key={idx} className={feature.className}>
               <FeatureTitle>{feature.title}</FeatureTitle>
               <FeatureDescription>{feature.description}</FeatureDescription>
-              <div className=" h-full w-full">{feature.skeleton}</div>
+              <div className="h-full w-full">{feature.skeleton}</div>
             </FeatureCard>
           ))}
         </div>
@@ -108,7 +111,7 @@ const FeatureCard = ({
   return (
     <div
       className={cn(
-        `relative overflow-hidden rounded-xl border-solid border-2 border-[#6c3f8e60] min-h-72`,
+        `relative overflow-hidden rounded-xl border-solid border-2 border-[#6c3f8e60] min-h-72 bg-[#0c051f]/50 backdrop-blur-md`,
         className
       )}
     >
@@ -119,7 +122,7 @@ const FeatureCard = ({
 
 const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <p className=" max-w-5xl mx-5 text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+    <p className="max-w-5xl mx-5 text-left tracking-tight text-white text-xl md:text-2xl md:leading-snug">
       {children}
     </p>
   );
@@ -129,9 +132,7 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
   return (
     <p
       className={cn(
-        "text-sm md:text-base  max-w-4xl text-left",
-        "text-neutral-500 text-center font-normal dark:text-neutral-300",
-        "text-left max-w-sm mx-5 md:text-sm"
+        "text-sm md:text-base text-neutral-300 text-left max-w-sm mx-5 md:text-sm font-normal"
       )}
     >
       {children}
@@ -143,14 +144,14 @@ export const SkeletonOne = () => {
   return (
     <div className="relative flex gap-10 h-full growthBg">
       <div className="growthText">
-        <h1>Frontend Engineering.</h1>
-        <h4>UI is only as good as it converts</h4>
+        <h1 className="text-white font-extrabold">Frontend Engineering.</h1>
+        <h4 className="text-neutral-200">Interactive, fluid UI crafted for engagement and conversion</h4>
       </div>
-      <img className="growthDollar1 dollar" src="/dollar1.png" alt="dollar" />
-      <img className="growthDollar2 dollar" src="/dollar2.png" alt="dollar" />
-      <img className="growthDollar3 dollar" src="/dollar3.png" alt="dollar" />
-      <img className="growthDollar4 dollar" src="/dollar4.png" alt="dollar" />
-      <img className="growthDollar5 dollar" src="/dollar5.png" alt="dollar" />
+      <img className="growthDollar1 dollar" src="/dollar1.png" alt="growth icon" />
+      <img className="growthDollar2 dollar" src="/dollar2.png" alt="growth icon" />
+      <img className="growthDollar3 dollar" src="/dollar3.png" alt="growth icon" />
+      <img className="growthDollar4 dollar" src="/dollar4.png" alt="growth icon" />
+      <img className="growthDollar5 dollar" src="/dollar5.png" alt="growth icon" />
     </div>
   );
 };
@@ -158,8 +159,8 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
   return (
     <div className="flex w-full h-full flex-col items-center relative lockCard">
-      <h1 className="lockHeader">Enchanted. Secure.</h1>
-      <h1 className="lockHeader1">E**hanted. Secu**.</h1>
+      <h1 className="lockHeader">Secure Auth & SSO.</h1>
+      <h1 className="lockHeader1">Google OAuth / OTP</h1>
       <div className="lockBg"></div>
       <img className="lock" src="/lock.png" alt="lockIcon" />
     </div>
@@ -168,10 +169,10 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   return (
-    <div className="relative h-full overflow-hidden ">
+    <div className="relative h-full overflow-hidden">
       <div className="growthText">
-        <h1>Actually working</h1>
-        <h4>Idk how, but it does work.</h4>
+        <h1 className="text-white font-extrabold">Async Pipelines</h1>
+        <h4 className="text-neutral-200">Django, Celery & SHA-256 idempotent deduplication</h4>
       </div>
       <Cogs />
     </div>
@@ -180,10 +181,10 @@ export const SkeletonTwo = () => {
 
 export const SkeletonFour = () => {
   return (
-    <div className="h-full md:h-full flex flex-col relative]">
+    <div className="h-full md:h-full flex flex-col relative">
       <div className="growthText">
-        <h1>Fluid. Adapt. Responsive.</h1>
-        <h4>Designs that flow through all screens</h4>
+        <h1 className="text-white font-extrabold">Design System Tokens</h1>
+        <h4 className="text-neutral-200">Standardized layout tokens and components across all screens</h4>
       </div>
       <DesignComponent />
     </div>
@@ -192,7 +193,7 @@ export const SkeletonFour = () => {
 
 export const SkeletonFive = () => {
   return (
-    <div className="h-full md:h-full flex flex-col items-center relative ">
+    <div className="h-full md:h-full flex flex-col items-center relative">
       <IntegrationCard />
     </div>
   );
@@ -208,14 +209,16 @@ export const SkeletonSix = () => {
 
 export const SkeletonSeven = () => {
   return (
-    <div className="h-full md:h-full flex flex-col items-center relative scaleBg ">
-      <div className="w-full h-full flex flex-col justify-between p-5">
-        <h1 className="text-[24px]">Iterate, Refine, Repeat</h1>
-        <h4 className="text-[14px]">Deploy, get feedback, Iterate, Deploy Again. <br />
-        [This is actually an empty block.. Oh wait i can quote something here]
+    <div className="h-full md:h-full flex flex-col items-center relative scaleBg">
+      <div className="w-full h-full flex flex-col justify-between p-6">
+        <h1 className="text-[24px] font-extrabold text-white">Multi-Tenant Platforms</h1>
+        <h4 className="text-[13px] text-neutral-300 leading-relaxed">
+          Dynamic content generation, GraphQL query batching, and automated SEO architecture.
         </h4>
-        <h4 className="text-[18px] text-pretty">&quot; Real Engineering is driving progress by iteratively refining solutions &quot;</h4>
-        <h5 className="text-end">- by Me</h5>
+        <h4 className="text-[16px] text-pretty text-[#ba9cff] font-medium italic">
+          &quot;Real engineering is driving progress by iteratively refining solutions at scale.&quot;
+        </h4>
+        <h5 className="text-end text-neutral-400 text-xs font-semibold">- Suyash Kharade</h5>
       </div>
     </div>
   );
@@ -223,8 +226,8 @@ export const SkeletonSeven = () => {
 
 export const SkeletonEight = () => {
   return (
-    <div className="h-full md:h-full flex flex-col items-center relative ">
-      <h1 className="seoHeader">Maximize Visibility.</h1>
+    <div className="h-full md:h-full flex flex-col items-center relative">
+      <h1 className="seoHeader">AEO & Structured Data</h1>
       <div className="seoBg"></div>
       <img className="seoMagnifier" src="/magnifier1.svg" alt="magnifier" />
     </div>
@@ -233,19 +236,40 @@ export const SkeletonEight = () => {
 
 export const SkeletonNine = () => {
   return (
-    <div className="h-full md:h-full flex flex-col relative ">
+    <div className="h-full md:h-full flex flex-col relative">
       <div className="w-full h-fit flex flex-col justify-between px-5 pt-5">
-        <h1 className="text-[24px]">Smart Networking.</h1>
-        <h4 className="text-[14px]">I&apos;m into tech, science and space</h4>
+        <h1 className="text-[22px] font-bold text-white">Code & Connect</h1>
+        <h4 className="text-[13px] text-neutral-300">Open source on GitHub & professional network</h4>
       </div>
-      <a 
-          href="https://x.com/Suyash170502" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-gray-400 hover:text-white transition-colors"
+      <div className="absolute inset-x-0 bottom-6 flex justify-center items-center gap-6">
+        <a
+          href="https://github.com/Suyyuu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-3 rounded-full bg-white/10 hover:bg-[#ba9cff] hover:text-black text-white transition-all shadow-lg"
+          title="GitHub"
         >
-          <img src="/x.svg" alt="x logo" className="h-2/3 w-2/3 absolute top-20 left-1/2 transform -translate-x-1/2 opacity-70" />
+          <FaGithub size={24} />
         </a>
+        <a
+          href="https://linkedin.com/in/suyash-kharade1234"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-3 rounded-full bg-white/10 hover:bg-[#ba9cff] hover:text-black text-white transition-all shadow-lg"
+          title="LinkedIn"
+        >
+          <FaLinkedin size={24} />
+        </a>
+        <a
+          href="https://x.com/Suyash170502"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="p-3 rounded-full bg-white/10 hover:bg-[#ba9cff] hover:text-black text-white transition-all shadow-lg"
+          title="Twitter / X"
+        >
+          <FaTwitter size={24} />
+        </a>
+      </div>
     </div>
   );
 };
@@ -254,8 +278,8 @@ export const SkeletonTen = () => {
   return (
     <div className="h-full md:h-full flex flex-col relative scaleBg">
       <div className="growthText">
-        <h1>Always Learning.</h1>
-        <h4>You gotta do what you gotta do right?</h4>
+        <h1 className="text-white font-extrabold">Mobile Ecosystem</h1>
+        <h4 className="text-neutral-200">Operational Flutter apps with BLoC event architecture & real-time sync</h4>
       </div>
       <div className="journeyBG"></div>
     </div>
