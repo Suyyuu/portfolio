@@ -3,55 +3,46 @@ import styles from './HexagonalGrid.module.css';
 const HexagonalGrid: React.FC = () => {
   return (
     <div className={styles.hexaContainer}>
-
       <div className={styles.hexGridContainer}>
-
-        <div className={styles.hex}>
+        {/* Row 1 */}
+        <div className={styles.hex} title="Tailwind CSS">
           <img src="/tailwind-css-2.svg" alt="TailwindCSS" />
         </div>
-        <div className={styles.hex}>
-          <img
-            src="/nextjs-icon.svg"
-            alt="Square"
-          />
+        <div className={styles.hex} title="Next.js">
+          <img src="/nextjs-icon.svg" alt="Next.js" />
         </div>
 
-        
-        <div className={styles.hex}></div>
-        <div className={styles.hex}>
-          <img src="/fastapi-1.svg" alt="Fast-API" />
+        {/* Row 2 */}
+        <div className={styles.hex} title="Python">
+          <img src="/python.svg" alt="Python" />
         </div>
-        <div className={styles.hex}>
+        <div className={styles.hex} title="Django">
+          <img src="/django.svg" alt="Django" />
+        </div>
+        <div className={styles.hex} title="React">
           <img src="/react-2.svg" alt="React" />
         </div>
 
-        
-        <div className={styles.hex}></div>
-        <div className={styles.hex}>
-          <img
-            src="/jest.svg"
-            alt="X"
-          />
+        {/* Row 3 */}
+        <div className={styles.hex} title="Flutter">
+          <img src="/flutter.svg" alt="Flutter" />
         </div>
-        <div className={styles.hex}>
-          <img
-            src="/figma-icon.svg"
-            alt="Apple"
-          />
+        <div className={styles.hex} title="PostgreSQL">
+          <img src="/postgresql.svg" alt="PostgreSQL" />
         </div>
-        <div className={styles.hex}></div>
+        <div className={styles.hex} title="Redis">
+          <img src="/redis.svg" alt="Redis" />
+        </div>
+        <div className={styles.hex} title="Docker">
+          <img src="/docker.svg" alt="Docker" />
+        </div>
 
-        <div className={styles.hex}>
-          <img
-            src="/docker.svg"
-            alt="Google"
-          />
+        {/* Row 4 */}
+        <div className={styles.hex} title="Git">
+          <img src="/giticon.svg" alt="Git" />
         </div>
-        <div className={styles.hex}>
-        <img
-            src="/giticon.svg"
-            alt="Google"
-          />
+        <div className={styles.hex} title="Jest">
+          <img src="/jest.svg" alt="Jest" />
         </div>
       </div>
     </div>
